@@ -32,11 +32,17 @@
       background: rgba(26, 26, 26, 0.9);
       padding: 40px;
       border-radius: 15px;
-      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+      box-shadow: 0 0 10px gold, 0 0 25px rgba(0,0,0,0.6); /* ✨ glow */
       width: 350px;
       text-align: center;
       backdrop-filter: blur(10px);
       margin-bottom: 30px;
+      border: 2px solid gold; /* 🟡 gold outline */
+    }
+
+    .container:hover {
+      box-shadow: 0 0 20px gold, 0 0 40px gold; /* 🔥 hover glow */
+      transition: 0.3s;
     }
 
     .header {
@@ -198,7 +204,6 @@
       <textarea name="ugc_file" placeholder="Paste your Jailbreak file here..." required></textarea>
       <input type="text" name="Jailbreak_item" placeholder="The jailbreak item you want" required>
 
-      <!-- FIXED MESSAGE -->
       <p style="font-size:12px; color:#888;">Gamepass update is coming soon!</p>
 
       <button type="submit">Submit</button>
@@ -208,8 +213,6 @@
       Powered by S4NTY 💻
     </div>
   </div>
-
-  <!-- rest unchanged -->
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
